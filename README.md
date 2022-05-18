@@ -1,13 +1,12 @@
 
-> :warning: Some of you are asking for macOS 12 Monterey support. I have gotton it to work on my computer, but I do not have the time or motivation to add info about it. 
-> What I will say though is I got it to work using the iMac16,2 SMBIOS. I will keep updating OC versions though. Thank you.
+> This guide was originally created by varszegimarcell and I edited it to give instructions for macOS Monterey.
 
 # Dell Optiplex 3020 Hackintosh OpenCore
 
 This repository contains a guide on how to install macOS on the Dell Optiplex 3020, with the necessary files, using OpenCore bootloader.
 
 This guide covers the following macOS versions:
-* macOS 11 Big Sur
+* macOS 12 Monterey
 
 ## Disclaimer
 
@@ -21,18 +20,16 @@ The Dell Optiplex 3020 is a common and cheap business computer, based on the 4th
 
 Since I'm an active Hackintosh user on this machine, I will update the EFI periodically here as anything new is available.
 
-Currently, this EFI is based on OpenCore 0.7.4 and supports macOS Big Sur.
+Currently, this EFI is based on OpenCore 0.7.4 and supports macOS Monterey.
 
 
 ## About Big Sur
 
-With this EFI, you can install Big Sur. I started this guide in the Catalina days, now I only cover Big Sur, as it is pretty stable at this point. This EFI may work with Catalina too, although I don't test it anymore. 
+This is intended only to cover Monterey. If you want to install Big Sur, please see the guide I forked this from.
 
-If you want to update from Catalina, go to the System Preferences, check for updates and just install it. 
 
-> NOTICE: Some users (including me) experienced a problem when tried to update Catalina to Big Sur from System Preferences, as after the install, the machine booted back to Catalina like nothing was changed. I have no fixes for this issue at the moment, if the System Preferences update fails, you have to update via an install USB.
 
-**About INTEL HD4400 with Big Sur:** With the latest kexts, Big Sur is now usable with Intel HD4400. Sadly, it is far from bug-free, some weird graphical glitches can happen all the time. I noticed, that sometimes, folder icons show up with a file icon too, for example, rendered buggy on top of the folder icon. Also, Preview can freeze with large (4K) image files. I have sometimes issues in GarageBand too. I still strongly recommend using Intel HD4600 instead, but at least it is usable with HD4400 too. 
+**About INTEL HD4400 with Catalina:** With the latest kexts, Catalina is now usable with Intel HD4400. Sadly, it is far from bug-free, some weird graphical glitches can happen all the time. I noticed, that sometimes, folder icons show up with a file icon too, for example, rendered buggy on top of the folder icon. Also, Preview can freeze with large (4K) image files. I have sometimes issues in GarageBand too. I still strongly recommend using Intel HD4600 instead, but at least it is usable with HD4400 too. 
 
 ## Before you start
 
